@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '.my-tictactoe/src/styles.css'
+import './styles.css'
 
 export default function App() {
   return (
