@@ -1,5 +1,14 @@
 import { useState } from 'react';
 
+export default function App() {
+  return (
+    <div style={{ padding: '20px' }}>
+      <h1>Tic-Tac-Toe</h1>
+      <Board />
+    </div>
+  );
+}
+
 function Square({value, onSquareClick }) {
   return (
     <button className="square" onClick={onSquareClick}>
@@ -8,7 +17,7 @@ function Square({value, onSquareClick }) {
   );
 }
 
-export default function Board() {
+function Board() {
   const [xIsNext, setXIsNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
 
